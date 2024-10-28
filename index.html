@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>kurebiad</title>
+</head>
+<body>
+  <div class="header">
+    <div class="baslik">
+      <h1>kurebiad</h1>
+    </div>
+  </div>
+  <div id="manga-list-container">
+    <div id="manga-list"></div>
+    <div id="add-manga-button">+</div>
+  </div>
+
+  <!-- Modal -->
+  <div id="manga-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Manga Ekle</h2>
+      <form id="manga-form">
+        <label for="manga-name">Manga Adı:</label>
+        <input type="text" id="manga-name" name="manga-name" required>
+        <label for="manga-cover">Manga Resmi:</label>
+        <input type="file" id="manga-cover" name="manga-cover" accept="image/*">
+        <button type="submit">Ekle</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
